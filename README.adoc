@@ -47,7 +47,7 @@ repository.
 for more information.
 . Install necessary packages: `sudo apt-get -y install git net-tools procps --no-install-recommends`.
 . Download the script: `git clone https://github.com/konstruktoid/hardening.git`.
-. Change the configuration options in the `ubuntu.cfg` file. Make sure to update the CHANGEME variable otherwise the script will fail.
+. Change the configuration options in the `ubuntu.cfg` file.
 . Run the script: `sudo bash ubuntu.sh`.
 . Reboot.
 
@@ -187,7 +187,7 @@ Disables the `bluetooth`, `bnep`, `btusb`, `cpia2`, `firewire-core`, `floppy`,
 
 Note that disabling the `usb-storage` module will disable any usage of USB
 storage devices, if such devices are needed `USBGuard` should be configured
-accordingly and `usb-storage` removed from the `disablemod` function.
+accordingly.
 
 The `disablemod` function is located in link:scripts/disablemod[./scripts/disablemod].
 
@@ -643,10 +643,6 @@ HTML-format.
 === Testing a host
 Running `bash ./runHostTests.sh`, located in the link:tests/[tests directory],
 will generate a `TESTRESULTS-<HOSTNAME>.adoc` report.
-
-Running `bash ./runHostTestsCsv.sh`, located in the link:tests/[tests directory],
-will generate a `TESTRESULTS-<HOSTNAME>.csv` report.
-
 
 == Recommended reading
 https://public.cyber.mil/stigs/downloads/?_dl_facet_stigs=operating-systems%2Cunix-linux[Canonical Ubuntu 20.04 LTS STIG - Ver 1, Rel 3] +
